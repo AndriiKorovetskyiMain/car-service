@@ -7,6 +7,9 @@
 *.sln.docstates
 *.coverage.xml
 
+# Idea files
+.idea/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
