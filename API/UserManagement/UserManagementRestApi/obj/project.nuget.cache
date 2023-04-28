@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "RStRbm+f6HyUE/22zxsL6ahvk1GJ7gp3Rygfec9Vzd8ccjrr3KGrMMjkgKXXohOigFQDUrn7r5cJIf2UjHpamQ==",
+  "success": true,
+  "projectFilePath": "C:\\PP\\car-service\\API\\UserManagement\\UserManagementRestApi\\UserManagementRestApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\akorovetskyi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
