@@ -18,6 +18,8 @@ x64/
 bld/
 [Bb]in/
 [Oo]bj/
+bin/
+obj/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -178,4 +180,3 @@ FakesAssemblies/
 *.DS_Store
 /.migration/before
 /.migration/after
-
