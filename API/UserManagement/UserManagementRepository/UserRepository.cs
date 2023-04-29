@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using UserManagementDomain;
 using UserManagementDomain.Repository;
-using UserManagementEF;
 
-namespace UserManagementRestApi.Repository;
+namespace UserManagementRepository;
 
 public class UserRepository : IUserRepository
 {
@@ -31,8 +30,12 @@ public class UserRepository : IUserRepository
         _userDbContext.SaveChanges();
     }
 
-    public void Delete(User user)
+    public void Delete(int id)
     {
+        var user = _userDbContext.Users.SingleOrDefault(u => u.Id == id);
+
+        if (user is null) return;
+
         _userDbContext.Users.Remove(user);
         _userDbContext.SaveChanges();
     }

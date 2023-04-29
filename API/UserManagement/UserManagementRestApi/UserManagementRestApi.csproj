@@ -13,8 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Domain\Domain.csproj" />
-      <ProjectReference Include="..\Repository\Repository.csproj" />
+      <ProjectReference Include="..\UserManagementDomain\UserManagementDomain.csproj" />
+      <ProjectReference Include="..\UserManagementRepository\UserManagementRepository.csproj" />
     </ItemGroup>
 
 </Project>

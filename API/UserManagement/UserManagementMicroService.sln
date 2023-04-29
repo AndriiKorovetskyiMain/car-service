@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{EF54E153-89A8-4E43-91A9-0B6CC899A64C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementRestApi", "UserManagementRestApi\UserManagementRestApi.csproj", "{EF54E153-89A8-4E43-91A9-0B6CC899A64C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D945BC41-C665-4597-9A5F-D4A6DDA78AAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementDomain", "UserManagementDomain\UserManagementDomain.csproj", "{D945BC41-C665-4597-9A5F-D4A6DDA78AAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{3B1B365B-6CC3-490A-BC1A-2633B5CEDD12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementRepository", "UserManagementRepository\UserManagementRepository.csproj", "{3B1B365B-6CC3-490A-BC1A-2633B5CEDD12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

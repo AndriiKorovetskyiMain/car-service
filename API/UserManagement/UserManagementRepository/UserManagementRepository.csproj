@@ -4,7 +4,6 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>UserManagementEF</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\UserManagementDomain\UserManagementDomain.csproj" />
     </ItemGroup>
 
 </Project>

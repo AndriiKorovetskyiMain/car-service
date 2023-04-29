@@ -42,4 +42,9 @@ public class UserService : IUserService
 
         return user;
     }
+
+    public void Delete(int id)
+    {
+        _userRepository.Delete(id);
+    }
 }

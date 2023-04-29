@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace UserManagementEF.Migrations
+namespace UserManagementRepository.Migrations
 {
     /// <inheritdoc />
     public partial class CreateUserManagementDB : Migration

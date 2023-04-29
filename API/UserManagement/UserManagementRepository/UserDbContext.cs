@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using UserManagementDomain;
 
-namespace UserManagementEF;
+namespace UserManagementRepository;
 
 public class UserDbContext : DbContext
 {
