@@ -25,6 +25,14 @@ public class UserManagementController : ControllerBase
 
         return Ok(user);
     }
+    
+    [HttpGet(Name = "GetUsers")]
+    public ActionResult<IEnumerable<User>> GetList(bool includeInactive = false)
+    {
+        var users = _userService.GetList(includeInactive);
+
+        return Ok(users);
+    }
 
     [HttpPost(Name = "CreateUser")]
     public ActionResult<User> Create([FromBody] UserDto userDto)

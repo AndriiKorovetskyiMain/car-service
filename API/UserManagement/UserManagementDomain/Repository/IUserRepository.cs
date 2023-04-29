@@ -3,6 +3,8 @@ namespace UserManagementDomain.Repository;
 public interface IUserRepository
 {
     User? GetById(int id);
+    
+    IEnumerable<User> GetList(bool includeInactive = false);
 
     void Create(User user);
 

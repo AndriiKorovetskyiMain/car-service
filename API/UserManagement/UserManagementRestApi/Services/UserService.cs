@@ -21,6 +21,12 @@ public class UserService : IUserService
         return user;
     }
 
+    public IEnumerable<User> GetList(bool includeInactive = false)
+    {
+        var users = _userRepository.GetList(includeInactive);
+        return users;
+    }
+
     public User Create(UserDto userDto)
     {
         if (string.IsNullOrWhiteSpace(userDto.Username))

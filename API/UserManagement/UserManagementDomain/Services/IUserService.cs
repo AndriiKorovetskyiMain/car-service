@@ -6,6 +6,8 @@ public interface IUserService
 {
     User? GetById(int id);
 
+    IEnumerable<User> GetList(bool includeInactive = false);
+
     User Create(UserDto userDto);
     
     void Activate(int id);

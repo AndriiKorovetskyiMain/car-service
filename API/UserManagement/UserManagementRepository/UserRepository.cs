@@ -18,6 +18,13 @@ public class UserRepository : IUserRepository
         return _userDbContext.Users.Find(id);
     }
 
+    public IEnumerable<User> GetList(bool includeInactive = false)
+    {
+        return includeInactive
+            ? _userDbContext.Users.ToList()
+            : _userDbContext.Users.Where(u => u.IsActive == true).ToList();
+    }
+
     public void Create(User user)
     {
         _userDbContext.Users.Add(user);
