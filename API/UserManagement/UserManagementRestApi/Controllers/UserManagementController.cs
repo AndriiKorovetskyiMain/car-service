@@ -6,7 +6,7 @@ using UserManagementDomain.Services;
 namespace UserManagementRestApi.Controllers;
 
 [ApiController]
-[Route("users/{id:int}")]
+[Route("users")]
 public class UserManagementController : ControllerBase
 {
     private readonly IUserService _userService;
@@ -16,7 +16,7 @@ public class UserManagementController : ControllerBase
         _userService = userService;
     }
 
-    [HttpGet("", Name = "GetUserById")]
+    [HttpGet("{id:int}", Name = "GetUserById")]
     public ActionResult<User> GetById(int id)
     {
         var user = _userService.GetById(id);
@@ -34,7 +34,7 @@ public class UserManagementController : ControllerBase
         return Ok(user);
     }
 
-    [HttpDelete("", Name = "DeleteUser")]
+    [HttpDelete("{id:int}", Name = "DeleteUser")]
     public ActionResult Delete(int id)
     {
         _userService.Delete(id);
