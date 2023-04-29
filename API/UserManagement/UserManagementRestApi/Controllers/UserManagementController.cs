@@ -16,6 +16,16 @@ public class UserManagementController : ControllerBase
         _userService = userService;
     }
 
+    [HttpGet("{id:int}", Name = "GetUserById")]
+    public ActionResult<User> GetById(int id)
+    {
+        var user = _userService.GetById(id);
+
+        if (user is null) return NotFound();
+
+        return Ok(user);
+    }
+
     [HttpPost(Name = "CreateUser")]
     public ActionResult<User> Create([FromBody] UserDto userDto)
     {

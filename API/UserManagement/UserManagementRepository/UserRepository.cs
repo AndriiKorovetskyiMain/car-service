@@ -13,7 +13,7 @@ public class UserRepository : IUserRepository
         _userDbContext = userDbContext;
     }
     
-    public User GetById(int id)
+    public User? GetById(int id)
     {
         return _userDbContext.Users.Find(id);
     }

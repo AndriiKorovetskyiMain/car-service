@@ -14,6 +14,13 @@ public class UserService : IUserService
         _userRepository = userRepository;
     }
 
+    public User? GetById(int id)
+    {
+        var user = _userRepository.GetById(id);
+
+        return user;
+    }
+
     public User Create(UserDto userDto)
     {
         if (string.IsNullOrWhiteSpace(userDto.Username))
