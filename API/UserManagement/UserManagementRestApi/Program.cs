@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using UserManagementDomain.Repository;
 using UserManagementDomain.Services;
 using UserManagementRepository;
@@ -13,7 +14,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Own services
-builder.Services.AddDbContext<UserDbContext>();
+builder.Services.AddDbContext<UserDbContext>(
+    optionsBuilder => optionsBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
