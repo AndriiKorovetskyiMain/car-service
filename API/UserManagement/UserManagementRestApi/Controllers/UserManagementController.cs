@@ -33,6 +33,22 @@ public class UserManagementController : ControllerBase
 
         return Ok(user);
     }
+    
+    [HttpPut("{id:int}/activate", Name = "ActivateUser")]
+    public ActionResult Activate(int id)
+    {
+        _userService.Activate(id);
+
+        return NoContent();
+    }
+    
+    [HttpPut("{id:int}/deactivate", Name = "DeactivateUser")]
+    public ActionResult Deactivate(int id)
+    {
+        _userService.Deactivate(id);
+    
+        return NoContent();
+    }
 
     [HttpDelete("{id:int}", Name = "DeleteUser")]
     public ActionResult Delete(int id)

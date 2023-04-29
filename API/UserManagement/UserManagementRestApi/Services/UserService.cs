@@ -50,6 +50,16 @@ public class UserService : IUserService
         return user;
     }
 
+    public void Activate(int id)
+    {
+        _userRepository.Activate(id);
+    }
+    
+    public void Deactivate(int id)
+    {
+        _userRepository.Deactivate(id);
+    }
+
     public void Delete(int id)
     {
         _userRepository.Delete(id);

@@ -12,7 +12,7 @@ public class UserRepository : IUserRepository
     {
         _userDbContext = userDbContext;
     }
-    
+
     public User? GetById(int id)
     {
         return _userDbContext.Users.Find(id);
@@ -27,6 +27,30 @@ public class UserRepository : IUserRepository
     public void Update(User user)
     {
         _userDbContext.Entry(user).State = EntityState.Modified;
+        _userDbContext.SaveChanges();
+    }
+
+    public void Activate(int id)
+    {
+        var user = _userDbContext.Users.SingleOrDefault(u => u.Id == id);
+
+        if (user is null || user.IsActive) return;
+
+        user.IsActive = true;
+
+        _userDbContext.Update(user);
+        _userDbContext.SaveChanges();
+    }
+
+    public void Deactivate(int id)
+    {
+        var user = _userDbContext.Users.SingleOrDefault(u => u.Id == id);
+
+        if (user is null || user.IsActive is false) return;
+
+        user.IsActive = false;
+
+        _userDbContext.Update(user);
         _userDbContext.SaveChanges();
     }
 
